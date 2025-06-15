@@ -9,6 +9,7 @@
 </head>
 
 <body>
+
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -26,14 +27,15 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/contatti">Contatti</a>
+
                         </li>
 
                     </ul>
                 </div>
             </div>
         </nav>
+        <h1>contatti</h1>
     </header>
-    <h1>Ciao, sono Laravel</h1>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 
