@@ -11,20 +11,20 @@ Route::get('/welcome', function () {
 Route::get('/about', function () {
     $articoli = [
         [
-            'titolo' => 'Articolo1',
-            'descrizione' => 'Una guida per principianti sul linguaggio PHP.',
-            'autore' => 'Mario Rossi'
+            'id' => 1,
+            'title' => 'Siti web',
+            'description' => 'realizzo app web'
         ],
         [
-            'titolo' => 'Laravel per tutti',
-            'descrizione' => 'Scopri come costruire applicazioni web con Laravel.',
-            'autore' => 'Lucia Bianchi'
+            'id' => 2,
+            'title' => 'app web',
+            'description' => 'realizzo app web'
         ],
 
         [
-            'titolo' => 'Programmazione moderna in PHP',
-            'descrizione' => 'Tecniche avanzate e best practices nel 2025.',
-            'autore' => 'Giovanni Verdi'
+            'id' => 3,
+            'title' => 'Malessere',
+            'description' => 'Ansia e disagio costante'
         ]
     ];
     $cose = ['Viva i gattini', 'Ma chi te vole', 'Eclissati'];

@@ -40,8 +40,8 @@
 
                 @foreach($articoli as $articolo)
                 <article class="card">
-                    <h3>{{$articolo['titolo']}}</h3>
-                    <p>{{$articolo['descrizione']}}</p>
+                    <h4>{{$articolo['id']}}-{{$articolo['title']}}</h4>
+                    <p>{{$articolo['description']}}</p>
                 </article>
                 @endforeach
             </div>
