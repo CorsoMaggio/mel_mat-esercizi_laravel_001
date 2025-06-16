@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -29,17 +28,16 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/contatti">Contatti</a>
-
                         </li>
 
                     </ul>
                 </div>
             </div>
         </nav>
-
     </header>
-    <h1>404</h1>
-    <h2>Pagina non trovata.</h2>
+
+    <h1>{{ $articolo['title'] }} </h1>
+    <p>{{ $articolo['description'] }}</p>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">
     </script>

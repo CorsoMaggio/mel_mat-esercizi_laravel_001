@@ -40,3 +40,30 @@ Route::get('/contatti', function () {
 Route::get('/print/{nome}', function ($nome) {
     return "Ciao, mi chiamo $nome";
 });
+
+Route::get('/dettaglio/{id}', function ($id) {
+    $articoli = [
+        [
+            'id' => 1,
+            'title' => 'Siti web',
+            'description' => 'realizzo app web'
+        ],
+        [
+            'id' => 2,
+            'title' => 'app web',
+            'description' => 'realizzo app web'
+        ],
+
+        [
+            'id' => 3,
+            'title' => 'Malessere',
+            'description' => 'Ansia e disagio costante'
+        ]
+    ];
+    foreach ($articoli as $articolo) {
+        if ($id == $articolo['id']) {
+            return view('detail', ['articolo' => $articolo]);
+        }
+    }
+    abort(404);
+});
